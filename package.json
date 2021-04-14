@@ -1,0 +1,35 @@
+{
+  "name": "compliance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "deploy": "export NODE_ENV=production && export ENV=production && next build && next export -o ../release-prod/MarketingPage.Emlo",
+    "deploy-demo": "export NODE_ENV=development && export ENV=development && next build && next export -o ../release/MarketingPage.Emlo",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "body-scroll-lock": "^3.0.3",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "flag-icon-css": "^3.5.0",
+    "netlify-cms-app": "^2.14.38",
+    "next": "9.5.1",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-lightgallery": "^0.8.2",
+    "react-slick": "^0.27.3",
+    "react-swipeable-views": "^0.13.9",
+    "react-toastify": "^6.0.8",
+    "sass": "^1.26.10"
+  }
+}

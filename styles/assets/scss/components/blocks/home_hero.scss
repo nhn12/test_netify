@@ -1,0 +1,103 @@
+.home-hero {
+  padding: 0;
+  height: 100vh;
+  background: url('/images/intro-bg.jpg') no-repeat center bottom scroll #f5f8fd;
+  background-size: 100%;
+
+  .MuiContainer-root {
+    height: 100%;
+
+    .MuiGrid-item {
+
+      &:first-child {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .MuiGrid-container {
+    height: 100%;
+  }
+
+  .home-hero {
+
+    &__content {
+      background: none;
+      box-shadow: none;
+
+      .MuiCardContent-root,
+      .MuiCardActions-root {
+        padding: 0;
+      }
+    }
+
+    &__image {
+      max-width: 30rem;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .heading {
+    font-weight: $font-bold;
+    color: $primary-text-color;
+    margin: 0 0 4rem;
+    font-size: 2rem;
+  }
+
+  blue {
+    color: $primary-color;
+  }
+
+  .sub-heading {
+    font-weight: $font-regular;
+    color: $primary-text-color;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+  }
+}
+
+@include tablet-up {
+
+  .home-hero {
+    
+    .MuiContainer-root {
+      
+      .MuiGrid-item {
+
+        &:first-child {
+          align-self: center;
+        }
+      }
+    }
+
+    .home-hero {
+
+      &__image {
+        max-width: 100%;
+      }
+    }
+
+    .heading {
+      font-size: 3.2rem;
+    }
+
+    .sub-heading {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include desktop-up {
+
+  .home-hero {
+    
+    .heading {
+      font-size: 5.4rem;
+    }
+
+    .sub-heading {
+      font-size: 2.4rem;
+    }
+  }
+}

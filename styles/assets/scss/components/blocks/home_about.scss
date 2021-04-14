@@ -1,0 +1,99 @@
+.home-about {
+  padding: 1.5rem 0;
+
+  .heading {
+    color: $primary-color;
+  }
+
+  .sub-heading {
+    font-weight: $font-light;
+    font-style: italic;
+    margin: 0 0 1.5rem;
+  }
+
+  .home-about {
+
+    &__img {
+      padding: 2.4rem;
+      position: relative;
+
+      img {
+        position: relative;
+        z-index: 3;
+        border: solid .5rem $white;
+      }
+
+      &::before {
+        content: '';
+        background: $grey-color-3;
+        display: block;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        z-index: 1;
+        top: 1.2rem;
+        left: 1.2rem;
+      }
+
+      &::after {
+        content: '';
+        background: $grey-color-3;
+        display: block;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        z-index: 1;
+        bottom: 1.2rem;
+        right: 1.2rem;
+      }
+    }
+
+    &__content {
+      padding: 0 2.4rem;
+    }
+  }
+}
+
+@include tablet-up {
+  
+  .home-about {
+    padding: 2.5rem 0;
+
+    .home-about {
+
+      &__img {
+        padding: 4.8rem;
+
+        img {
+          border: solid 1rem $white;
+        }
+  
+        &::before {
+          top: 2.4rem;
+          left: 2.4rem;
+        }
+  
+        &::after {
+          bottom: 2.4rem;
+          right: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@include desktop-up {
+
+  .home-about {
+    padding: 4.5rem 0;
+    
+  }
+}
+
+@include lg-desktop-up {
+
+  .home-about {
+    padding: 6.5rem 0;
+    
+  }
+}

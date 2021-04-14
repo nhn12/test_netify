@@ -1,0 +1,73 @@
+.home-form-contact {
+  background: $grey-color-1;
+  padding: 1.5rem 0;
+
+  .heading {
+    font-weight: $font-regular;
+  }
+
+  .sub-heading {
+    font-weight: $font-semi;
+    margin: 0 0 2rem;
+  }
+
+  .desc {
+    margin: 0 0 1.5rem;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0 0 3rem;
+
+    li {
+      padding: 0;
+      font-size: 1.4rem;
+      margin: 0 0 1.5rem;
+    }
+  }
+
+  .MuiFormControl-root {
+    margin: 0 0 1.5rem;
+    border-radius: 0;
+    
+    .MuiOutlinedInput-root {
+      border-radius: 0;
+      color: $primary-text-color;
+      background: $white;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-text-color;
+
+    &:hover {
+      color: $primary-color--dark;
+    }
+
+    &.MuiButton-containedPrimary {
+      display: inline-flex;
+      margin: 0 auto;
+      color: $white;
+      font-weight: $font-medium;
+    }
+  }
+}
+
+@include tablet-up {
+  .home-form-contact {
+    padding: 2.5rem 0;
+  } 
+}
+
+@include desktop-up {
+  .home-form-contact {
+    padding: 4.5rem 0;
+  } 
+}
+
+@include lg-desktop-up {
+  .home-form-contact {
+    padding: 6.5rem 0;
+  } 
+}

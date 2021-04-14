@@ -1,0 +1,14 @@
+@import './variables';
+@import './mixin';
+
+@import './components/global/body';
+@import './components/global/header';
+@import './components/global/footer';
+@import './components/global/controls';
+@import '../../../node_modules/flag-icon-css/sass/flag-icon';
+
+@import './plugins/slick';
+@import './plugins/slick-theme';
+@import './plugins/ionicons';
+
+@import './pages/home';

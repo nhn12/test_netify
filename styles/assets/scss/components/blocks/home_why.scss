@@ -1,0 +1,57 @@
+.home-why {
+  padding: 1.5rem 0;
+  
+  .heading {
+    text-align: center;
+    color: $primary-color--dark;
+    margin: 0 auto 1rem;
+  }
+
+  .desc {
+    text-align: center;
+    font-weight: $font-light;
+    margin: 0 auto 3rem;
+  }
+
+  .home-why {
+
+    &__content {
+      padding: 0 2.4rem;
+
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
+@include tablet-up {
+  
+  .home-why {
+    padding: 2.5rem 0;
+
+    .desc {
+      max-width: 60%;
+    }
+  }
+}
+
+@include desktop-up {
+
+  .home-why {
+    padding: 4.5rem 0;
+  }
+}
+
+@include lg-desktop-up {
+
+  .home-why {
+    padding: 6.5rem 0;
+  }
+}

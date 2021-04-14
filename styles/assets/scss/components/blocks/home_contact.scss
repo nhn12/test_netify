@@ -1,0 +1,46 @@
+.home-contact {
+  padding: 2.5rem 0;
+  background-color: darken($primary-color, 20);
+  color: $white;
+  text-align: center;
+
+  .desc {
+    margin: 0 0 1.5rem;
+  }
+
+  .MuiButton-outlined {
+    border: solid .2rem $white;
+    text-transform: capitalize;
+    font-weight: $font-medium;
+  }
+
+}
+
+@include tablet-up {
+  
+  .home-contact {
+    padding: 2.5rem 0;
+    text-align: left;
+
+    .home-contact {
+      
+      &__content {
+        align-items: center;
+
+        .MuiGrid-item {
+
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop-up {
+
+  .home-contact {
+    padding: 5rem 0;
+  }
+}
